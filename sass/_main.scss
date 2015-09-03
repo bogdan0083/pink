@@ -465,7 +465,7 @@
 	margin: 0 auto;
 }
 .footer__icon {
-	width: 51px;
+	width: 52px;
 	height: 51px;
 	display: inline-block;
 	margin-left: 12px;
@@ -475,27 +475,18 @@
 }
 .footer__icon--facebook {
 	@include icons-sprite(icon-facebook);
-	&:hover {
-		width: 52px;
-	}
 	&:active {
 		@include opacity(0.3);
 	}
 }
 .footer__icon--twitter {
 	@include icons-sprite(icon-twitter);
-	&:hover {
-		width: 52px;
-	}
 	&:active {
 		@include opacity(0.3);
 	}
 }
 .footer__icon--youtube {
 	@include icons-sprite(icon-youtube);
-	&:hover {
-		width: 52px;
-	}
 	&:active {
 		@include opacity(0.3);
 	}

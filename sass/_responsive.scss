@@ -1,0 +1,636 @@
+
+
+@media screen and (min-width: 700px) {
+
+	// LOGO CHANGE
+		.header__logo {
+			width: 145px;
+			height: 40px;
+			margin: 23px 0 47px 40px;
+			&:hover {
+				background: url('../img/pink-logo-2-hover.png') no-repeat;
+			}
+			&:active {
+				background: url('../img/pink-logo-2-active.png') no-repeat;
+			}
+	}
+
+	// BURGER MARGINS FIX
+	 .header__hamburger {
+	 	margin: 44px 40px 42px;
+	 }
+
+	 // INTRO
+
+	 .intro {
+	 	background: url('../img/background-2@1x.jpg') no-repeat 50%/cover;
+	 	min-height: 730px;
+	 	overflow: hidden; // TO REMOVE HORIZONTAL SCROLL
+	 	&__in {
+			padding: 200px 20px 0;
+	 	}
+	 	&__heading {
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 1.4;
+			margin-left: 50px;
+			margin-bottom: 10px;
+	 	}
+	 	&__image {
+	 		background: url('../img/iphone-hand-2@1x.png') no-repeat 50% 0;
+	 		width: 100%;
+	 		height: 545px;
+	 		position: absolute;
+	 		bottom: 0;
+	 		margin-left: -17px;
+	 	}
+	 	&__apps {
+	 		position: relative;
+	 		width: 300px;
+	 		background: none;
+	 	}
+	 	.apps__btn-download {
+	 		width: 280px;
+	 		margin-bottom: 40px;
+	 	}
+	 	.apps__row {
+	 		margin-bottom: 40px;
+	 	}
+	 }
+
+	 // FEATURES
+
+	 .features {
+	 	margin-top: 0;
+	 	padding-top: 60px;
+	 	@include background-image(linear-gradient(175deg, #ffffff 0%,#ffffff 27%,#f2f2f2 27%));
+
+	 	&__in {
+	 		padding: 0 40px;
+	 	}
+	 	&__heading {
+			font-size: 40px;
+			width: 587px;
+	 	}
+	 	&__heading1 {
+	 		margin-bottom: 0;
+	 	}
+	 	&__heading2 {
+	 		width: 580px;
+	 		margin-bottom: 50px;
+	 	}
+	 	&__row {
+	 		width: 310px;
+	 		float: right;
+	 		text-align: left;
+	 		margin-top: 50px;
+	 	}
+
+	 	&__wrap {
+		width: 620px;
+		margin: 0 auto;
+		}
+	
+	// BIG PHONE
+
+	 	&__big-phone {
+	 		width: 268px;
+	 		height: 480px;
+	 		background: url('../img/iphone-screen-2-1@1x.png') no-repeat;
+	 		float: left;
+	 		margin-right: 40px;
+	 		cursor: pointer;
+	 		&:hover {
+	 			background: url('../img/iphone-screen-2-2@1x.png') no-repeat;
+	 		}
+	 		&:active {
+	 			background: url('../img/iphone-screen-2-3@1x.png') no-repeat;
+	 		}
+	 	}
+	 	.feature__text {
+	 		margin: 0;
+	 		width: 100%;
+	 	}
+
+	 	// FEATURE 24
+
+	 	&__feature-24 {
+	 		display: block;
+	 		clear: both;
+	 		background: white;
+	 		overflow: hidden;
+	 	}
+	 	&__feature-24__in {
+	 		width: 700px;
+			margin: 0 auto;
+			padding: 60px 40px 50px;
+	 	}
+		.feature-24__picture {
+			width: 262px;
+			height: 302px;
+			background: url('../img/timer-2.svg') no-repeat;
+			position: relative;
+			float: left;
+			margin-right: 45px;
+		}
+		.feature-24__picture__circle {
+			width: 215px;
+			height: 214px;
+			border: 11px solid #d22856;
+			border-radius: 50%;
+			position: absolute;
+			left: 50%;
+			top: 63px;
+			margin-left: -107.5px;
+			span {
+				@include osb;
+				font-size: 105px;
+				line-height: 163px;
+				color: #d22856;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -81.5px;
+				margin-left: -60px;
+			}
+
+		}
+		.feature-24__wrap {
+			overflow: hidden;
+			float: right;
+			width: 295px;
+		}
+		.feature-24__heading {
+				font-size: 30px;
+				line-height: 36px;
+				margin-bottom: 15px;
+			}
+		.feature-24__text {
+			margin-top: 0;
+		}
+		.feature-24__more {
+			display: inline-block;
+			color: #d22856;
+			text-decoration: underline;
+			line-height: 24px;
+		}
+	 }
+
+	// REVIEWS SLIDER
+
+	.reviews-slider {
+
+	}
+	.reviews-slider__in {
+		padding: 40px 40px 150px;
+	}
+	.reviews-slider__wrap {
+		width: 617px;
+	}
+	.reviews-slider__slide {
+		.slide__name {
+			font-size: 20px;
+			margin-top: 0;
+			margin-bottom: 10px;
+			order: 2;
+		}
+		.slide__info {
+			display: block;
+			order: 3;
+			margin-bottom: 35px;
+		}
+		.slide__text {
+			order: 1;
+			margin-bottom: 45px;
+		}
+
+	}
+
+	.reviews-slider__controls {
+		bottom: 50px;
+	}
+	
+	// PRICE SLIDER
+	.price__in {
+		padding: 20px 0 70px;
+		background: #f2f2f2;
+		margin: 0;
+	}
+	.price__wrap {
+		display: none !important;
+	}
+	.price__table {
+		display: none;
+	}
+	
+	 .price__table--big {
+		display: table;
+		width: 620px;
+		margin: 0 auto;
+		text-align: center;
+		border-collapse: no-collapse;
+		tr td{
+			border: 2px solid #e5e5e5;
+		}
+		.table-heading__is-hidden {
+			border: none;
+		}
+		.table-heading__title {
+			background: #283645;
+			color: white;
+			padding: 20px 0 15px;
+			font-size: 16px;
+			@include osb;
+			text-transform: uppercase;
+			border: 2px solid #f2f2f2;
+		}
+		.table-heading__title2 {
+			position: relative;
+		}
+		.table-heading__title2:after {
+			content: "";
+			position: absolute;
+			width: 74px;
+			height: 73px;
+			top: 0;
+			left: 0;
+			background: url("../img/hit.png") no-repeat;		}
+		.table-heading__price {
+			display: block;
+			@include osl;
+			font-size: 18px;
+		}
+		.table__row-caption {
+			padding: 19px 0 16px 17px;
+			text-align: left;
+			border: 2px solid #e5e5e5;
+			width: 157px;
+		}
+		.table__icon--yes {
+			width: 29px;
+			height: 22px;
+			background: url('../img/yes.svg') no-repeat;
+			display: block;
+			margin: 0 auto;
+			}
+		.table__icon--no {
+			width: 26px;
+			height: 26px;
+			background: url('../img/no.svg') no-repeat;
+			display: block;
+			margin: 0 auto;
+			}
+	}
+
+	// CONTACT SECTION 
+
+	.contact__heading {
+		font-size: 40px;
+	}
+	.contact__phone {
+		display: inline-block;
+	}
+	.contact__mail {
+		margin-left: 140px;
+		display: inline-block;
+	}
+
+	// MAP
+	
+	.map__image {
+		//background: url('../img/map-large.jpg') no-repeat 50% 70%;
+		height: 525px;
+	}
+	.map__mask {
+		height: 145px;
+	}
+
+	// FOOTER
+
+	.footer {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	// HEADER
+
+	.header {
+		.header__logo {
+			margin-top: 27px;
+			margin-bottom: 43px;
+			margin-left: 10px;
+			background: url('../img/pink-logo-3--x1.png') no-repeat;
+			&:hover {
+				background: url('../img/pink-logo-2-hover.png') no-repeat;
+			}
+			&:active {
+				background: url('../img/pink-logo-2-active.png') no-repeat;
+			}
+		}
+
+		.header__hamburger {
+			display: none;
+		}
+
+		.header__nav {
+			max-height: 100%;
+			clear: none;
+			margin-right: 10px;
+			float: right;
+		}
+
+		.nav__list-item {
+			display: inline-block;
+			margin-left: 70px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.nav__list-item a {
+			width: 100%;
+			@include os;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 18px;
+			text-transform: none;
+			background: none;
+			border-bottom: none;
+			box-shadow: none;
+			margin: 37px 0 34px;
+			padding: 10px 0;
+			&:hover {
+				border-bottom: 3px solid white;
+				padding-bottom: 7px;
+				text-decoration: none;
+			}
+			&:active {
+				border: none;
+				@include opacity(0.3);
+			}
+		}
+
+	}
+
+ // INTRO
+
+	.intro {
+	 	background: url('../img/background-fullsize.jpg') no-repeat 50%/cover;
+	 	min-height: 850px;
+	 	&__in {
+	 		margin: 0 auto;
+	 		padding-right: 10px;
+	 		padding-left: 10px;
+	 	}
+	 	&__heading {
+	 		margin-bottom: 30px;
+	 		font-size: 50px;
+	 		line-height: 1.3;
+
+	 	}
+	 	&__image {
+	 		background: url('../img/iphone-hand-3@1x.png') no-repeat 50% 0;
+	 		width: 100%;
+	 		height: 645px;
+	 		position: absolute;
+	 		bottom: 0;
+	 		margin-left: -100px;
+	 	}
+	 	.apps__btn-download {
+	 		width: 100%;
+	 		padding: 16px 0;
+	 		margin-bottom: 66px;
+	 	}
+	 	.apps__available {
+	 		font-size: 18px;
+	 	}
+	 }
+
+	// FEATURES 
+
+	 .features {
+	 	padding-top: 78px;
+	 	@include background-image(linear-gradient(175deg, #ffffff 0%,#ffffff 30%,#f2f2f2 30%));
+	 	&__in {
+	 		padding: 0 10px;
+	 		max-width: 960px;
+	 		margin: 0 auto;
+	 	}
+	 	&__heading {
+			font-size: 50px;
+			width: 735px;
+	 	}
+	 	&__heading1 {
+	 		margin-bottom: 0;
+	 	}
+	 	&__heading2 {
+	 		width: 580px;
+	 	}
+	 	&__row {
+	 		float: none;
+	 		width: 100%;
+	 	}
+	 	&__wrap {
+	 		width: 100%;
+	 	}
+	 	&__feature {
+	 		width: 300px;
+	 		float: left;
+	 		margin-right: 20px;
+	 		margin-bottom: 0;
+	 		padding: 0 35px;
+	 		text-align: center;
+	 		&:last-child {
+	 			margin-right: 0;
+	 		}
+	 	}
+
+	 	&__big-phone {
+	 		display: none;
+	 	}
+	 	.feature__text {
+	 		font-size: 18px;
+	 		line-height: 30px;
+	 	}
+	 	.feature__heading {
+	 		@include osb;
+	 		font-size: 30px;
+	 		line-height: 30px;
+	 	}
+	 	.feature__picture {
+	 		width: 186px;
+	 		height: 382px;
+	 		display: block;
+	 		background: url('../img/iphone-screen-2-1@1x.png') no-repeat 100%/100%;
+	 		margin: 0 auto 60px;
+	 	}
+		.feature__picture1 {
+	 		background: url('../img/iphone-screen-2-1@1x.png') no-repeat 100%/100%;
+		}
+		.feature__picture2 {
+	 		background: url('../img/iphone-screen-2-2@1x.png') no-repeat 100%/100%;
+		}
+		.feature__picture3 {
+	 		background: url('../img/iphone-screen-2-3@1x.png') no-repeat 100%/100%;
+		}
+		.features__feature-24 {
+			background: #f2f2f2;
+		}
+		.features__feature-24__in {
+			width: 940px;
+			padding: 72px 10px 65px;
+		}
+		.feature-24__picture {
+			width: 301px;
+			height: 346px;
+			background: url('../img/timer-3.svg') no-repeat;
+			margin-right: 65px;
+		}
+		.feature-24__picture__circle {
+			width: 247px;
+			height: 246px;
+			top: 73px;
+			left: 50%;
+			border: 13px solid #d22856;
+			margin-left: -123px;
+			span {
+				font-size: 128px;
+				margin-left: -73px;
+				margin-top: -93.5px;
+				line-height: 187px;
+			}
+		}
+		.feature-24__wrap {
+			float: left;
+			width: 520px;
+		}
+		.feature-24__heading {
+			font-size: 30px;
+			margin-top: 98px;
+		}
+		.feature-24__text, .feature-24__more {
+			font-size: 18px;
+		}
+
+	 }
+
+	 // SLIDER
+
+	 .reviews-slider__in {
+	 	padding-top: 70px;
+	 	padding-left: 10px;
+	 	padding-right: 10px;
+	 	padding-bottom: 150px;
+	 	position: relative;
+ 
+	}
+	 .reviews-slider__controls {
+	 	display: none;
+	 }
+	.reviews-slider__wrap {
+		width: 677px;
+		padding-top: 122px;
+		height: 350px;
+		&:after {
+			content: "";
+			width: 79px;
+			height: 64px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -39.5px;
+			background: url("../img/quotes.svg") no-repeat;
+		}
+	}
+	 .reviews-slider__slide {
+	 	.slide__text {
+			font-size: 18px;
+			line-height: 30px;
+	 	}
+	 	.slide__name {
+	 		font-size: 24px;
+	 	}
+	 	.slide__info {
+	 		font-size: 18px;
+	 	}
+	 }
+	 .reviews-slider__arrow {
+	 	display: block;
+	 	width: 22px;
+	 	height: 44px;
+	 	position: absolute;
+	 	cursor: pointer;
+	 }
+	 .reviews-slider__arrow1 {
+	 	background: url('../img/left-arrow.svg') no-repeat;
+	 	top: 50%;
+	 	left: -110px;
+	 	margin-top: -22px;
+	 }
+	 .reviews-slider__arrow2 {
+	 	background: url('../img/right-arrow.svg') no-repeat;
+	 	top: 50%;
+	 	right: -110px;
+	 	margin-top: -22px;
+	 }
+
+	// BIG TABLE
+
+	.price__in {
+		padding: 20px 0 100px;
+		background: #f2f2f2;
+		margin: 0;
+	}
+	.price__table--big {
+		width: 920px;
+	}
+
+	// CONTACT SECTION 
+
+	.contact__heading {
+		font-size: 50px;
+	}
+	.contact__wrap {
+		width: 820px;
+		margin: 0 auto;
+	}
+	.contact__phone {
+		display: inline-block;
+		float: left;
+	}
+	.contact__mail {
+		margin-left: 80px;
+		display: inline-block;
+		float: right;
+	}
+	.contact__address {
+		margin-left: 80px;
+		display: inline-block;
+		//float: left;
+	}
+	// MAP
+
+	.map__image {
+		//background: url('../img/map-mega.jpg') no-repeat 50% 70%;
+		width: 100%;
+		height: 535px;
+		position: relative;
+	}
+	//#js-map {
+	//	height: 100%;
+	//}
+	.map__mask {
+		height: 245px;
+	}
+
+	// FOOTER
+
+	.footer__logo {
+		background: url('../img/pink-logo-footer-3--x1.png') no-repeat;
+	}
+	.footer__in {
+		max-width: 960px;
+		padding: 70px 0;
+	}
+}

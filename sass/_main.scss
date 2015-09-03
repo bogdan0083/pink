@@ -1,0 +1,534 @@
+
+// HEADER
+	
+.header {
+	background: black;
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	&__logo {
+		@include icons-sprite(pink-logo-1);
+		width: 74px;
+		height: 24px;
+		display: block;
+		float: left;
+		margin: 21px 0 21px 20px;
+	}
+
+	// MOBILE MENU STYLES
+
+	&__hamburger {
+		@include icons-sprite(burger-menu);
+		color: white;
+		float: right;
+		width: 54px;
+		height: 24px;
+		cursor: pointer;
+		margin: 21px 20px 21px 0;
+		&:hover {
+			@include icons-sprite(burger-menu-hover);
+		}
+
+		&:active {
+			@include icons-sprite(burger-menu-active);
+		}
+	}
+	&__in {
+		max-width: 960px;
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	&__nav {
+		clear: both;
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+		overflow: hidden;
+		max-height: 0;
+		float: none;
+	}
+	.nav__list-item a {
+		@include osb;
+		color: white;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		padding: 19px 0px;
+		font-size: 18px;
+		background: #283645;
+		@include box-shadow(0 1px 0 black, inset 0 1px 0 rgba(255, 255, 255, 0.15));
+		border-bottom: 1px solid black;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			@include opacity(0.3);
+
+		}
+	}
+}
+
+// HEADER ACTIVE STATE
+
+.header--is-active {
+	background: #283645;
+}
+
+// HAMBURGER ACTIVE STATE
+
+.header__hamburger--is-active {
+		width: 23px;
+		height: 22px;
+		margin-top: 23px;
+		margin-bottom: 23px;
+		@include icons-sprite(cross-menu);
+		&:hover {
+			@include icons-sprite(cross-menu-hover);
+		}
+		&:active {
+			@include icons-sprite(cross-menu-active);
+		}
+	}
+
+// MOBILE NAVIGATION ACTIVE STATE
+
+.header__nav--is-active {
+	max-height: 100%;
+}
+
+// INTRO SECTION
+
+.intro {
+	background: url('../img/background-1@1x.jpg') no-repeat 50%/cover;
+	height: 460px;
+	position: relative;
+	&__in {
+		padding: 85px 0 0;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	&__heading {
+		text-align: center;
+		color: white;
+		@include osl;
+		line-height: 30px;
+		width: 220px;
+		margin: 0 auto 27px;
+	}
+	&__image {
+		width: 100%;
+		height: 286px;
+		background: url('../img/iphone-hand-1.png') no-repeat 50% 0;
+		margin-left: -30px;
+	}
+	&__apps {
+		background: #1d2631;
+		padding: 1px 0;
+	}
+	&__apps__in {
+		text-align: center;
+
+	}
+	.apps__btn-download {
+		display: block;
+		text-align: center;
+		width: 280px;
+		@include osb;
+		line-height: 18px;
+		font-size: 18px;
+		color: white;
+		padding: 17px 0;
+		border: 3px solid white;
+		border-radius: 40px;
+		margin: 27px auto 33px;
+		&:hover {
+			background: white;
+			color: #d22856;
+		}
+		&:active {
+			color: #f1becb;
+		}
+	}
+	.apps__row {
+		margin-bottom: 28px;
+	}
+	.apps__logo {
+		margin: 0 17.5px;
+	}
+	.apps__available {
+		color: white;
+		@include osl;
+		line-height: 24px;
+		margin-bottom: 23px;
+		margin-top: 0;
+	}
+}
+
+// FEATURES
+
+.features {
+	background-color: #ffffff; // Old browsers
+	@include filter-gradient(#ffffff, #f2f2f2, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(linear-gradient(175deg, #ffffff 0%,#ffffff 25%,#f2f2f2 25%));
+	margin-top: 277px;
+	padding-top: 45px;
+	&__in {
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+	&__heading {
+		@include osl;
+		font-size: 24px;
+		color: #283645;
+		width: 204px;
+		margin: 0 auto;
+		margin-top: 0;
+		text-align: center;
+		line-height: 1.3;
+	}
+	&__heading1 {
+		margin-bottom: 33px;
+	}
+	&__heading2 {
+		margin-bottom: 120px;
+	}
+	&__row {
+		text-align: center;
+	}
+	
+	&__big-phone {
+		width: 157px;
+		height: 277px;
+		background: url('../img/screen-1-3.png') no-repeat;
+		margin: 0 auto;
+	}
+	&__feature {
+		margin-bottom: 40px;
+	}
+	&__feature-24 {
+		display: none;
+	}
+	.feature__heading {
+		margin-bottom: 18px;
+		font-size: 18px;
+		margin-top: 0;
+	}
+	.feature__text {
+		width: 260px;
+		margin: 0 auto;
+	}
+	
+	// STYLES FOR THE FEATURES PICTURE IS APPLIED IN RESPONSIVE.SCSS
+
+	.feature__picture {
+		display: none;
+	}
+
+}
+
+// REVIEWS SLIDER
+
+.reviews-slider {
+}
+.reviews-slider__in {
+	padding: 50px 20px 150px 20px;
+	background-color: #ffffff; // Old browsers
+	@include filter-gradient(#ffffff, #f2f2f2, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(linear-gradient(175deg, #ffffff 0%,#ffffff 80%,#f2f2f2 80%));
+}
+.reviews-slider__wrap {
+	width: 276px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+.reviews-slider__slide {
+	display: flex;
+	flex-direction: column;
+	.slide__name {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-size: 18px;
+	}
+	.slide__info {
+		display: none;
+	}
+	.slide__text {
+		line-height: 30px;
+		margin-top: 0;
+	}
+}
+
+.reviews-slider__controls {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	text-align: center;
+}
+.reviews-slider__control {
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background: #bec2c6;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 20px;
+	border: 3px solid white;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.reviews-slider__arrow {
+	display: none;
+}
+.reviews-slider__control--is-active {
+	border: 3px solid #283645;
+	background: white;
+}
+
+// PRICE SLIDER
+
+.price__in {
+	padding: 0 0 80px;
+	background: #f2f2f2;
+	height: 100%;
+	overflow: hidden;
+}
+.price__wrap {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0 0 40px;
+	position: relative;
+}
+.price__table {
+	width: 100%;
+	text-transform: uppercase;
+	position: relative;
+	table {
+		width: 100%;
+		border: 1px solid #e5e5e5;
+		border-collapse: collapse;
+			}
+	.table-heading2 {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 74px;
+			height: 73px;
+			top: 0;
+			left: 0;
+			background: url("../img/hit.png") no-repeat;
+		}
+	}
+
+	thead {
+		background: #283645;
+		color: white;
+		.table-heading__title {
+			@include osb;
+			font-size: 18px;
+			padding: 15px 0 10px;
+		}
+		.table-heading__price {
+			padding-bottom: 20px;
+			@include osl;
+			font-size: 24px;
+		}
+	}
+
+	.table-row {
+		td {
+			padding: 20px;
+			text-align: left;
+			border: 1px solid #e5e5e5; 
+			font-size: 14px;
+		}
+
+		.table-icon {
+			text-align: right;
+			float: right;
+		}
+		.table-icon--yes {
+			width: 29px;
+			height: 22px;
+			background: url('../img/yes.svg') no-repeat;
+			float: right;
+		}
+		.table-icon--no {
+			width: 26px;
+			height: 26px;
+			background: url('../img/no.svg') no-repeat;
+		}
+	}
+}
+
+.price__table--big {
+	display: none;
+}
+
+// CONTACT SECTION 
+
+.contact__in {
+	padding: 50px 20px 0;
+	text-align: center;
+}
+.contact__heading {
+	margin-top: 0;
+	margin-bottom: 45px;
+	@include osl;
+	font-size: 24px;
+	line-height: 1.4;
+}
+.contact__block {
+	margin-bottom: 28px;
+
+}
+.contact__subheading {
+	@include osb;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.contact__value {
+	color: #d22856;
+	@include osl;
+	font-size: 24px;
+	display: block;
+	line-height: 1.3;
+	&:hover {
+		color: #283645;
+		text-decoration: underline;
+	}
+	&:active {
+		@include opacity(0.3);
+	}
+}
+
+// MAP
+
+.map {
+	position: relative;
+}
+.map__image {
+	height: 235px;
+	width: 100%;
+}
+
+.map__mask {
+	height: 70px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1000;
+}
+
+// FOOTER
+
+.footer {
+	display: none;
+	text-align: center;
+}
+
+.footer__in {
+	padding: 36px 0 36px 0;
+	max-width: 620px;
+	margin: 0 auto;
+}
+
+.footer__logo {
+	width: 145px;
+	height: 40px;
+	background: url('../img/pink-logo-footer-2--x1.png') no-repeat;
+	display: inline-block;
+	float: left;
+	&:hover {
+	background: url('../img/pink-logo-footer-2--x1-hover.png') no-repeat;
+	}
+	&:active {
+		@include opacity(0.3)
+	}
+}
+
+.footer__social {
+	height: 51px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+.footer__icon {
+	width: 51px;
+	height: 51px;
+	display: inline-block;
+	margin-left: 12px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.footer__icon--facebook {
+	@include icons-sprite(icon-facebook);
+	&:hover {
+		width: 52px;
+	}
+	&:active {
+		@include opacity(0.3);
+	}
+}
+.footer__icon--twitter {
+	@include icons-sprite(icon-twitter);
+	&:hover {
+		width: 52px;
+	}
+	&:active {
+		@include opacity(0.3);
+	}
+}
+.footer__icon--youtube {
+	@include icons-sprite(icon-youtube);
+	&:hover {
+		width: 52px;
+	}
+	&:active {
+		@include opacity(0.3);
+	}
+}
+.footer__copyright {
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+	line-height: 51px;
+}
+
+.footer__gluhanko {
+	width: 27px;
+	height: 30px;
+	@include icons-sprite(icon-gluhanko);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 14px;
+	&:active {
+		@include opacity(0.3);
+	}
+}
+.footer__htmlacademy {
+	width: 27px;
+	height: 33px;
+	@include icons-sprite(icon-htmlacademy);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 14px;
+
+	&:active {
+		@include opacity(0.3);
+	}
+}
+
+// HEY! THAT'S THE END OF THE CODE! ;)

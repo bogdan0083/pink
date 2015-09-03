@@ -1,0 +1,197 @@
+doctype html
+html(lang="en")
+  head
+    title Pink
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/screen.css")
+    link(rel="stylesheet" href="slick/slick.css")
+    link(rel="stylesheet" href="slick/slick-theme.css")
+    script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer)
+  body
+    .wrapper
+        // HEADER 
+        header.header.clr
+            .header__in.clr
+                a.header__logo(href="index.html")
+                .header__hamburger
+                nav.header__nav
+                    ul
+                        li.nav__list-item: a(href="#") Информация
+                        li.nav__list-item: a(href="#") Возможности
+                        li.nav__list-item: a(href="#") Отзывы
+                        li.nav__list-item: a(href="#") Стоимость
+        // INTRO
+        section.intro
+            .intro__in
+                h2.intro__heading Взгляните на жизнь иначе!
+                .intro__image
+                .intro__apps
+                    .intro__apps__in
+                        a.apps__btn-download(href="#") Скачать приложение
+                        .apps__row
+                            img.apps__logo.apps__logo1(src="img/apple-logo.svg" data-fallback="logo.png" alt="Логотип Эппл")
+                            img.apps__logo.apps__logo2(src="img/android-logo.svg" data-fallback="logo.png" alt="Логотип Андройд")
+                            img.apps__logo.apps__logo3(src="img/microsoft-logo.svg" data-fallback="logo.png" alt="Логотип Майкрософт")
+                        p.apps__available Доступно для iPhone, iPad, Android, #[br] Windows phone, Mac OS, Windows 8
+        // FEATURES
+        .features
+            .features__in.clr
+                h2.features__heading.features__heading1 Устали от серости мегаполиса?
+                h2.features__heading.features__heading2 Нам есть, что вам предложить!
+                .features__wrap
+                    .features__row.clr
+                        .features__feature.features__feature1
+                            .feature__picture.feature__picture1                            
+                            h3.feature__heading.feature__heading1 Поднимает настроение
+                            p.feature__text.feature__text1 Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+                         .features__feature.features__feature2
+                            .feature__picture.feature__picture2
+                            h3.feature__heading.feature__heading2 Меняет мир вокруг
+                            p.feature__text.feature__text2 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                        .features__feature.features__feature3
+                            .feature__picture.feature__picture3
+                            h3.feature__heading.feature__heading3 Заводите новых друзей
+                            p.feature__text.feature__text3 Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых   
+                    .features__big-phone
+            // FEATURE 24
+            .features__feature-24
+                .features__feature-24__in.clr
+                    .feature-24__picture
+                        .feature-24__picture__circle
+                            span 24
+                    .feature-24__wrap
+                        h3.feature-24__heading Эффект на 24 часа!
+                        p.feature-24__text Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                        a.feature-24__more(href="#") Узнать больше об исследовании
+        // REVIEWS SLIDER                      
+        .reviews-slider
+            .reviews-slider__in
+                .reviews-slider__wrap
+                    .reviews-slider__slide.reviews-slider__slide1
+                        h3.slide__name.slide1__name Николай Петров
+                        span.slide__info.slide1__info 25 лет, водитель трамвая
+                        p.slide__text.slide1__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» 
+                    .reviews-slider__slide.reviews-slider__slide2
+                        h3.slide__name.slide2__name Вася Пупкин
+                        span.slide__info.slide2__info 17 лет, ученик
+                        p.slide__text.slide2__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    .reviews-slider__slide.reviews-slider__slide3
+                        h3.slide__name.slide2__name Петя Васечкин
+                        span.slide__info.slide2__info 25 лет, водитель трамвая
+                        p.slide__text.slide2__text «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        // PRICE TABLE 
+        .price
+            .price__in
+                .price__wrap
+                    .price__table.price__table1#price__table1
+                        table 
+                            thead.table-heading.table-heading1
+                                tr
+                                     td.table-heading__title База
+                                tr
+                                     td.table-heading__price 1,99 USD
+
+                            tr.table-row
+                                 td Розовый фильтр #[span.table-icon.table-icon--yes] 
+                            tr.table-row
+                                 td Смайлики #[span.table-icon.table-icon--no]  
+                            tr.table-row
+                                 td Комментарии #[span.table-icon.table-icon--no]  
+                    .price__table.price__table2#price__table2
+                        table 
+                            thead.table-heading.table-heading2
+                                tr
+                                     td.table-heading__title Стандарт
+                                tr
+                                     td.table-heading__price 3,99 USD
+
+                            tr.table-row
+                                 td Розовый фильтр #[span.table-icon.table-icon--yes]  
+                            tr.table-row
+                                 td Смайлики #[span.table-icon.table-icon--yes] 
+                            tr.table-row
+                                 td Комментарии #[span.table-icon.table-icon--no]  
+                    .price__table.price__table3#price__table3
+                        table 
+                            thead.table-heading.table-heading3
+                                tr
+                                     td.table-heading__title Анлим
+                                tr
+                                     td.table-heading__price 9,99 USD
+
+                            tr.table-row
+                                 td Розовый фильтр #[span.table-icon.table-icon--yes]  
+                            tr.table-row
+                                 td Смайлики #[span.table-icon.table-icon--yes]  
+                            tr.table-row
+                                 td Комментарии #[span.table-icon.table-icon--yes]
+                // BIG PRICE TABLE (DISPLAYED ON WIDTH MORE THEN 700PX)
+                table.price__table--big
+                            thead.table-heading
+                                 th.table-heading__is-hidden
+                                 th.table-heading__title.table-heading__title1 База 
+                                    span.table-heading__price 1,99 USD
+                                 th.table-heading__title.table-heading__title2 Стандарт
+                                    span.table-heading__price 3,99 USD
+                                 th.table-heading__title.table-heading__title3 Анлим
+                                    span.table-heading__price 9,99 USD
+                                tr
+                                     td.table__row-caption Розовый фильтр
+                                     td
+                                        i.table__icon.table__icon--yes
+                                     td 
+                                        i.table__icon.table__icon--no
+                                     td 
+                                        i.table__icon.table__icon--no
+                                tr
+                                     td.table__row-caption Смайлики
+                                     td
+                                        i.table__icon.table__icon--yes
+                                     td 
+                                        i.table__icon.table__icon--no
+                                     td 
+                                        i.table__icon.table__icon--no 
+                                tr
+                                     td.table__row-caption Смайлики
+                                     td
+                                        i.table__icon.table__icon--yes
+                                     td 
+                                        i.table__icon.table__icon--yes
+                                     td 
+                                        i.table__icon.table__icon--no
+        // CONTACT 
+        .contact
+            .contact__in
+                h2.contact__heading Остались вопросы? #[br] Свяжитесь с нами!
+                .contact__wrap.clr
+                    .contact__block.contact__phone 
+                        h3.contact__subheading Звоните:
+                        a.contact__value.contact-value--phone(href="#") 8 (800) 1000 900
+                    .contact__block.contact__mail
+                        h3.contact__subheading Пишите:
+                        a.contact__value.contact-value--phone(href="mailto:hello@pinkapp.ru") hello@pinkapp.ru
+                    .contact__block.contact__address
+                        h3.contact__subheading Приезжайте в гости:
+                        a.contact__value.contact-value--address(href="#") Санкт-Петербург, #[br] Невский проспект, д. 20 
+        .map
+            svg.map__mask(width='100%', height='0', viewbox='0 0 100 100', preserveaspectratio='none' fill="#fff")
+                polygon(points=' 50,50 100,0 0,0 0,0')
+            .map__image#js-map
+        // FOOTER (DISPLAYED AT < 700PX WIDTH)
+        footer.footer
+            .footer__in.clr
+                .footer-logo-wrap
+                    a.footer__logo(href="index.html")
+                .footer__social
+                    a.footer__icon.footer__icon--facebook(href="http://facebook.com")
+                    a.footer__icon.footer__icon--twitter(href="http://twitter.com")
+                    a.footer__icon.footer__icon--youtube(href="http://youtube.com")
+                .footer__copyright Website by #[a.footer__gluhanko(href="#a")] for #[a.footer__htmlacademy(href="#")]
+   
+    script(type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js")
+    script(type="text/javascript" src="js/vendor/jquery-1.11.3.min.js")
+    script(type="text/javascript" src="js/vendor/jquery-migrate-1.2.1.min.js")       
+    script(type="text/javascript" src="slick/slick.min.js")  
+    script(type="text/javascript" src="js/main.js")
+  
